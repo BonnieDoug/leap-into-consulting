@@ -7,15 +7,16 @@
   >
     <img width="170" :src="require('@/assets/logo.jpg')">
     <v-spacer/>
-    <template class="hidden-sm-and-down">
-      <v-btn v-for="item, key in navigationItems" class="ma-2" :icon="item.icon" :to="item.to" :key="key"
+    <div class="hidden-sm-and-down">
+      <v-btn v-for="item, key in navigationItems" class="ma-2" :icon="item.icon ? true : false" :to="item.to" :key="key"
              color="secondary">
-        <v-icon v-if="item.icon" v-html="item.icon"/>
-        <span v-else v-html="item.name"/>
+        <v-icon v-if="item.icon" v-html="item.icon"></v-icon>
+        <span v-else v-html="item.name"></span>
       </v-btn>
       <SocialMedia/>
-    </template>
-    <v-btn chip color="secondary" dark class="hidden-ms-and-up">
+    </div>
+    <v-btn chip color="secondary" dark class="hidden-md-and-up"
+           @click="$store.commit('navigation/SET_TOGGLE_NAVIGATION', true)">
       <v-icon>mdi-menu</v-icon>
     </v-btn>
   </v-toolbar>

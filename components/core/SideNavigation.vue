@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer permanent right>
+  <v-navigation-drawer stateless fixed right v-if="showSideNavigation">
     <v-toolbar flat>
       <v-list>
         <v-list-tile>
@@ -36,7 +36,8 @@
     },
     computed: {
       ...mapState({
-        navigationItems: state => state.navigation.items
+        navigationItems: state => state.navigation.items,
+        showSideNavigation: state => state.navigation.showSideNavigation
       })
     }
   }

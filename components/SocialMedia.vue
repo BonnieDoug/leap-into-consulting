@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <span>
     <v-btn
       v-for="(item, i) in items.slice(0, large ? items.length : 3)"
       :key="i"
@@ -13,7 +13,7 @@
         v-text="item.icon"
       />
     </v-btn>
-  </div>
+  </span>
 </template>
 
 <script>
