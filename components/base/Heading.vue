@@ -3,7 +3,7 @@
     :is="tag"
     class="display-3 v-heading mb-3 font-weight-light"
   >
-    <slot />
+    <slot></slot>
   </component>
 </template>
 

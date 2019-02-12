@@ -1,10 +1,10 @@
 <template>
   <div>
-    <welcome />
-    <recent-projects />
-    <services />
-    <about-me />
-    <get-in-touch />
+    <welcome></welcome>
+    <recent-projects></recent-projects>
+    <services></services>
+    <about-me></about-me>
+    <get-in-touch></get-in-touch>
   </div>
 </template>
 

@@ -1,10 +1,14 @@
 <template>
+  <!--<span>-->
+  <!--<div class="text-xs-center">-->
   <span>
     <v-btn
       v-for="(item, i) in items.slice(0, large ? items.length : 3)"
       :key="i"
       fab
-      class="ma-2"
+      :href="item.to"
+      target="_blank"
+      class="ma-2 justify-center"
       small
       color="info"
     >
@@ -14,6 +18,8 @@
       />
     </v-btn>
   </span>
+  <!--</div>-->
+  <!--</span>-->
 </template>
 
 <script>
@@ -29,15 +35,18 @@ export default {
     items: [
       {
         name: 'Twitter',
-        icon: 'mdi-twitter'
+        icon: 'mdi-twitter',
+        to: 'http://www.twitter.com/leap_into'
       },
       {
-        name: 'Instagram',
-        icon: 'mdi-instagram'
+        name: 'LinkedIN',
+        icon: 'mdi-linkedin',
+        to: 'https://www.linkedin.com/showcase/leap-into-consulting/'
       },
       {
         name: 'Facebook',
-        icon: 'mdi-facebook'
+        icon: 'mdi-facebook',
+        to: 'http://www.facebook.com/leapintoc'
       },
       {
         name: 'Email',

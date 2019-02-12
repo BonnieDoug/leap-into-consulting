@@ -1,10 +1,16 @@
 <template>
-  <div>
-    <h1>Events</h1>
-  </div>
+    <v-layout justify-center fill-height>
+      <v-flex xs12 sm8>
+        <v-card>
+          <v-card-title><h1>Up and coming events</h1></v-card-title>
+          <v-card-text>
+
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
 </template>
 
 <script>
-  export default {
-  }
+  export default {}
 </script>

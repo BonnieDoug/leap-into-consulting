@@ -34,12 +34,11 @@
             </base-heading>
 
             <base-text class="mb-5">
-              <p>Two leading business owners, consultants and coaches are both experienced in setting up and building businesses - and experts in areas that are core to your future success.  With a maxium of 20 people on each Fast Track Retreat - you will have a team of coaches to support you - and we will continue coaching you even after the 3 days!</p>
-              <p>Each retreat has inspirational guest speakers and carefully selected partners for you to work with immediately, create a referral income and provide additional tools, products and services that will expand your business.</p>
+              Two leading business owners, consultants and coaches are both experienced in setting up and building businesses - and experts in areas that are core to your future success.  With a maxium of 20 people on each Fast Track Retreat - you will have a team of coaches to support you - and we will continue coaching you even after the 3 days!</base-text>
+              <base-text>Each retreat has inspirational guest speakers and carefully selected partners for you to work with immediately, create a referral income and provide additional tools, products and services that will expand your business.</base-text>
               <base-btn colour="primary" class="mt-4">
                 Continue reading about your coaches here.
               </base-btn>
-            </base-text>
           </v-flex>
         </v-layout>
       </v-flex>

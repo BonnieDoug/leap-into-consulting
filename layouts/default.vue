@@ -1,17 +1,18 @@
 <template>
-  <v-app>
+  <v-app light>
     <core-toolbar/>
-    <core-side-navigation/>
-    <nuxt/>
-    <core-footer />
+    <v-content>
+      <nuxt/>
+    </v-content>
+    <core-footer/>
   </v-app>
 </template>
 
 <script>
   export default {
+    transition: 'v-fade-transition',
     components: {
       CoreFooter: () => import('~/components/core/Footer'),
-      CoreSideNavigation: () => import('~/components/core/SideNavigation'),
       CoreToolbar: () => import('~/components/core/Toolbar'),
       CoreView: () => import('~/components/core/View')
     }
